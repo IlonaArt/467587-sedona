@@ -77,7 +77,30 @@
 			<section class="appointment">
 				<p class="appointment-text">Заинтересовались?</p>
 				<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<div class="search-form-title">Поиск гостиницы в Седоне</div>	
+				<button>Поиск гостиницы в Седоне</button>
+				<form class="search" action="https://echo.htmlacademy.ru" method="post">	
+					<p>
+						<label for="arrival">дата заезда:</label>
+						<input id="arrival" type="date" name="arrival">
+						<button class="visually-hidden">Календарь</button>
+					</p>
+					<p>	
+						<label for="departure">дата выезда:</label>
+						<input id="departure" type="date" name="departure">
+						<button class="visually-hidden">Календарь</button>
+					</p>
+					<p>
+						<label for="adults">взрослые:</label>
+						<button class="visually-hidden">уменьшить</button>
+						<input id="adults" type="number" min="0" name="adults">
+						<button class="visually-hidden">увеличить</button>
+						<label for="children">дети:</label>
+						<button class="visually-hidden">уменьшить</button>
+						<input id="children" type="number" min="0" name="children">
+						<button class="visually-hidden">увеличить</button>
+					</p>	
+						<input type="submit" value="найти">	
+				</form>	
 				<div class="map">
 					<img src="img/map.jpg" width="768" height="473" alt="Карта штата">
 				</div>
@@ -92,7 +115,7 @@
 				</ul>	
 			<p class="footer-copyright">
 				<span>Website by</span>
-				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 			</p>
 		</footer>
 		<section class="modal modal-search-modal">

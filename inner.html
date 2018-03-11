@@ -19,20 +19,52 @@
 			</nav>		  			
 		</header>
 		<main class="container">
-			<section class="filter">
-				<h2>Инфраструктура:</h2>
-					<label><input type="checkbox" checked>бассейн</label>
-					<label><input type="checkbox">парковка</label>
-					<label><input type="checkbox">wi-fi</label>
-				<h2>Тип жилья:</h2>
-					<label><input type="checkbox" checked>гостиница</label>
-					<label><input type="checkbox" checked>мотель</label>
-					<label><input type="checkbox" checked>апартаменты</label>
-				<h2>Стоимость в сутки (р):</h2>
-					<button>Показать</button>	
+			<section class="main-filter">
+				<form class="filter" action="https://echo.htmlacademy.ru" method="get">
+					<fieldset>
+						<legend>Инфраструктура:</legend>
+						<ul>
+							<li>
+								<label for="filter-pool">бассейн</label>
+								<input id="filter-pool" type="checkbox" name="pool" checked>
+							</li>	
+							<li>
+								<label for="filter-parking">парковка</label>
+								<input id="filter-parking" type="checkbox" name="parking">
+							</li>
+							<li>	
+								<label for="filter-wi-fi">wi-fi</label>
+								<input id="filter-wi-fi" type="checkbox" name="wi-fi">
+							</li>	
+						</ul>	
+					</fieldset>
+					<fieldset>
+						<legend>Тип жилья:</legend>
+						<ul>
+							<li>
+								<label for=filter-hotel>гостиница</label>
+								<input id="filter-hotel" type="checkbox" name="hotel" checked>
+							</li>
+							<li>	
+								<label for="filter-motel">мотель</label>
+								<input id="filter-motel" type="checkbox" name="motel" checked>
+							</li>
+							<li>	
+								<label for="filter-appartments">апартаменты</label>
+								<input id="filter-appartments" type="checkbox" name="appartments" checked>
+							</li>	
+						</ul>
+					</fieldset>
+					<fieldset>
+						<legend>Стоимость в сутки (р):</legend>
+							<label>
+								<input type="range" name="radio">
+							</label>
+							<button type="submit">Показать</button>	
+					</fieldset>	
 			</section>
 			<section class="sorting">
-				<h2 class="visually hidden">Сортировка гостиниц</h2>
+				<h2 class="visually-hidden">Сортировка гостиниц</h2>
 				<p>найдено: 3</p>
 				<div class="sorting-type">сортировка:</div>
 					<ul class="sorting-type-list">
@@ -40,8 +72,8 @@
 						<li class="sorting-type-item"><a href="type.html">по типу</a></li>
 						<li class="sorting-type-item"><a href="rating.html">по рейтингу</a></li>	
 					</ul>
-				<span class="icon-up"><a href="#">вверх</a></span>
-				<span class="icon-down"><a href="#">вниз</a></span>	
+				<button class="visually-hidden" type="button">вверх</button>
+				<button class="visually-hidden" type="button">вниз</button>	
 			</section>	
 			<div class="hotels-type">
 				<div class="hotels-type-image">
@@ -53,7 +85,7 @@
 					<span class="stars4"></span>
 					<p class="rating">рейтинг: 8,5</p>
 				<a class="button" href="moreinfo.html">подробнее</a>
-				<a class="button" href="booking.html">забронировать</a>
+				<button>забронировать</button>
 			</div>
 			<div class="hotels-type">
 				<div class="hotels-type-image">
@@ -65,7 +97,7 @@
 					<span class="stars3"></span>
 					<p class="rating">рейтинг: 8,9</p>
 				<a class="button" href="moreinfo.html">подробнее</a>
-				<a class="button" href="booking.html">забронировать</a>
+				<button>забронировать</button>
 			</div>
 			<div class="hotels-type">
 				<div class="hotels-type-image">
@@ -77,7 +109,7 @@
 					<span class="stars2"></span>
 					<p class="rating">рейтинг: 9,2</p>
 				<a class="button" href="moreinfo.html">подробнее</a>
-				<a class="button" href="booking.html">забронировать</a>
+				<button>забронировать</button>
 			</div>
 		</main>	
 		<footer class="main-footer">
@@ -89,7 +121,7 @@
 				</ul>	
 			<p class="footer-copyright">
 				<span>Website by</span>
-				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss"></a>
+				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 			</p>
 		</footer>
 		<section class="modal modal-search-modal">
