@@ -1,0 +1,182 @@
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 400;
+	src:
+		local("PT Sans"),
+		url("web/ptsans.woff") format("woff"),
+		url("web/ptsans.woff2") format("woff2"); 
+}
+
+@font-face {
+	font-family: "PT Sans";
+	font-style: normal;
+	font-weight: 700;
+	src:
+		local("PT Sans Narrow"),
+		url("web/ptsansbold.woff") format("woff"),
+		url("web/ptsansbold.woff2") format("woff2"); 
+}
+
+body {
+	padding: 0;
+	margin: 0;
+
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #ffffff;	
+}
+
+a {
+	text-decoration: none;
+}
+
+button[type="button"] {
+	font: inherit;
+
+	text-align: center;
+	color: #ffffff;
+	vertical-align: middle;
+	text-transform: uppercase;
+
+	background-color: #766357;
+	border: none;
+}
+
+
+.main-menu {
+	line-height: 26px;
+	color: #000000;
+
+	background-color: #ffffff;
+}
+
+.site-navigation li {
+	list-style: none;
+}
+
+
+.site-navigation a {
+	color: #000000;
+}
+
+.site-navigation a:hover {
+	color: #81b3d2;
+}
+
+.site-navigation a:active {
+	color: #766357;
+}
+
+.site-navigation a:focus {
+	color: #b2b2b2;
+}
+
+/*фоновое фото*/
+.main-photo {
+	background-image: url("img/welcome-to.jpg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+
+.sedona-text,
+.reasons,
+.appointment-text {
+	text-align: center;
+}
+
+.sedona-text {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.reasons {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.features-list,
+.main-features {
+	list-style: none;
+}
+
+.main-features-text,
+.feature-item-text,
+.reasons,
+.dash,
+.appointment-info {
+	font-weight: normal;
+	text-align: center;
+}
+
+.city-features,
+.lodging,
+.meal,
+.souvenirs,
+.place,
+.road,
+.tourists {
+	font-size: 21px;
+	line-height: 21px;
+	text-align: center;
+}
+
+.appointment-text {
+	font-size: 30px;
+	line-height: 24px;
+}
+
+
+.sorting-type-list li {
+	list-style: none;
+}
+
+.sorting-type-item a {
+	color: #b2b2b2;
+}
+
+
+.sorting-type-item a:hover {
+	color: #81b3d2;
+}
+
+.sorting-type-item a:focus {
+	color: #000000;
+} 
+
+.sorting-type-item:first-child a:active,
+.sorting-type-item:first-child a:link {
+	color: #81b3d2;
+}
+
+.hotels-type .button {
+	color: #ffffff;
+	background-color: #81b3d2;
+}
+
+.hotels-type .button:hover {
+	color:  #ffffff;
+	background-color: #669ec0;
+} 
+
+.hotels-type .button:focus {
+	color:  #7eb0cd;
+	background-color: #5496bd;
+}
+
+a.hotels-type-link {
+	color: #000000;
+}
+
+a.hotels-type-link:hover {
+	color: #81b3d2;
+}
+
+a.hotels-type-link:focus {
+	color: #b2b2b2;
+}
