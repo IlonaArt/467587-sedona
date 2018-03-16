@@ -40,11 +40,9 @@ button[type="button"] {
 	font: inherit;
 
 	text-align: center;
-	color: #ffffff;
 	vertical-align: middle;
 	text-transform: uppercase;
 
-	background-color: #766357;
 	border: none;
 }
 
@@ -77,13 +75,6 @@ button[type="button"] {
 	color: #b2b2b2;
 }
 
-/*фоновое фото*/
-.main-photo {
-	background-image: url("img/welcome-to.jpg");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-}
-
 .sedona-text,
 .reasons,
 .appointment-text {
@@ -100,10 +91,12 @@ button[type="button"] {
 	line-height: 26px;
 }
 
-.features-list,
-.main-features {
+ul.features-list,
+ul.main-features,
+ul.main-features-list {
 	list-style: none;
 }
+
 
 .main-features-text,
 .feature-item-text,
@@ -115,9 +108,9 @@ button[type="button"] {
 }
 
 .city-features,
-.lodging,
-.meal,
-.souvenirs,
+p.lodging,
+p.meal,
+p.souvenirs,
 .place,
 .road,
 .tourists {
@@ -131,6 +124,204 @@ button[type="button"] {
 	line-height: 24px;
 }
 
+.button-search-hotels {
+	font-size: 21px;
+	line-height: 26px;
+	color:  #ffffff;
+	background-color: #766357;
+}
+
+.button-search-hotels:hover {
+	color:  #ffffff;
+	background-color: #604e43;
+}
+
+.button-search-hotels:focus {
+	color: #857871;
+	background-color: : #503e33;
+}
+
+.search input {
+	line-height: 26px;
+}
+
+.search input[type="text"],
+.search input[type="number"] {
+	font: inherit;
+	color: #000000;
+	text-transform: uppercase;
+
+	background-color: #f2f2f2;
+	border: none;
+}
+
+
+.search input[type="text"] {
+	cursor: pointer;
+}
+
+.search input[type="text"]:hover {
+	background-color: #ebebeb;
+}
+
+.search input[type="text"]:focus {
+	background-color: #ffffff;
+	border: 2px solid #e5e5e5;
+}
+
+.button-calendar {
+	color: #b2b2b2;
+	cursor: pointer;
+}
+
+.button-calendar:hover {
+	color: #000000;
+}
+
+.button-calendar:focus {
+	color: #81b3d2;
+}
+
+.symbol {
+	color: #b2b2b2;
+	cursor: pointer;
+}
+
+.symbol:hover {
+	color: #000000;
+} 
+
+.symbol:focus {
+	color: #81b3d2;
+}
+
+.search button[type="submit"] {
+	font: inherit;
+	font-size: 21px;
+	line-height: 26px;
+	color:  #ffffff;
+	background-color: #81b3d2;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.search button[type="submit"]:hover {
+	color:  #ffffff;
+	background-color: #669ec0;
+}
+
+.search button[type="submit"]:focus {
+	color:  #7eb0cd;
+	background-color: #5496bd;
+}
+
+p.instagram {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.footer-copyright span {
+	font-weight: normal;
+}
+
+ul.footer-social {
+	list-style: none;
+}
+
+.footer-social {
+	text-align: center;
+}
+
+.footer-copyright a {
+	color: #000000;
+}
+
+.footer-copyright a:hover {
+	color: #81b3d2;
+}
+
+.footer-copyright a:focus {
+	color: #b2b2b2;
+}
+
+/* внутренняя страница*/
+
+.main-filter {
+	background-image: url("../img/sedona-inner.jpg");
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.filter legend {
+	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
+}
+
+.filter ul {
+	list-style: none;
+}
+
+.filter li {
+	color: #ffffff;
+	font-weight: normal;
+}
+
+.filter input[type="checkbox"] {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.filter input[type="checkbox"]:hover {
+	color: #ffffff;
+}
+
+.filter input[type="checkbox"]:disabled {
+	color: 6a6a6a;
+}
+
+.filter input[type="checkbox"]:checked:hover {
+	color: #ffffff;
+}
+
+.filter input[type="checkbox"]:checked:disabled {
+	color: 6a6a6a;
+}
+
+.filter .button-show {
+	font: inherit;
+	font-weight: normal;
+	text-transform: uppercase;
+	color:  #ffffff;
+	border: solid 2px #ffffff;
+
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.filter .show:hover {
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.sorting .found {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sorting-type,
+.sorting-type-item {
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.hotels-type .description {
+	font-weight: normal;
+}
 
 .sorting-type-list li {
 	list-style: none;
@@ -139,7 +330,6 @@ button[type="button"] {
 .sorting-type-item a {
 	color: #b2b2b2;
 }
-
 
 .sorting-type-item a:hover {
 	color: #81b3d2;
@@ -154,19 +344,51 @@ button[type="button"] {
 	color: #81b3d2;
 }
 
-.hotels-type .button {
+.button-switch {
+	color: #b2b2b2;
+	cursor: pointer;
+}
+
+.button-switch:hover {
+	color: #000000;
+}
+
+.button-switch:focus {
+	color: #81b3d2;
+}
+
+.button-switch:active {
+	color: #81b3d2;
+}
+
+.hotels-type .button-blue {
 	color: #ffffff;
 	background-color: #81b3d2;
 }
 
-.hotels-type .button:hover {
+.hotels-type .button-blue:hover{
 	color:  #ffffff;
 	background-color: #669ec0;
 } 
 
-.hotels-type .button:focus {
+.hotels-type .button-blue:focus {
 	color:  #7eb0cd;
 	background-color: #5496bd;
+}
+
+.hotels-type .button-brown {
+	color: #ffffff;
+	background-color: #766357;
+}
+
+.hotels-type .button-brown:hover {
+	color:  #ffffff;
+	background-color: #604e43;
+}	
+
+.hotels-type .button-brown:focus {
+	color: #857871;
+	background-color: : #503e33;
 }
 
 a.hotels-type-link {
@@ -180,3 +402,4 @@ a.hotels-type-link:hover {
 a.hotels-type-link:focus {
 	color: #b2b2b2;
 }
+

@@ -23,38 +23,45 @@
 		<main class="container">
 			<section class="main-photo">
 				<h1 class="visually-hidden">Городок Седона</h1>
-				<p class="sedona-text">Седона - небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+					<div class="main-photo-image">	
+						<img src="img/welcome-to.jpg" alt="Седона">
+					</div>	
+				<p class="sedona-text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
 				<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
 			</section>
 			<section class="features">
 				<h2 class="visually hidden">Преимущества</h2>
 				<ul class="features-list">
 					<li class="feature-item">
-					<p class="city-features">Настоящий городок</p>
-					<p class="dash">&#8212; №1 &#8212;</p>	
-					<p class="feature-item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						<div class="feature-item-blue">
+							<p class="city-features">Настоящий городок</p>
+							<p class="dash">&#8212; №1 &#8212;</p>	
+							<p class="feature-item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+						</div>
+					</li>		
 					<div class="city-photo">
 						<img src="img/sedona-1.jpg" width="511" height="255" alt="Настоящий городок">
 					</div>
-					<ul class="main-features">
-						<li>
+					<ul class="main-features-list">
+						<li class="main-features-item lodging">
 							<p class="lodging">Жилье</p>
 							<p class="main-features-text">Рекомендуем пожить в настоящем мотеле, как в кино!</p>
 						</li>
-						<li>
+						<li class="main-features-item meal">
 							<p class="meal">Еда</p>	
 							<p class="main-features-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 						</li>	
-						<li>
+						<li class="main-features-item souvenirs">
 							<p class="souvenirs">Сувениры</p>   
 							<p class="main-features-text">Не только китайского, но и местного производства!</p>  
 						</li> 		
 					</ul>
-					</li>
 					<li class="feature-item">
-						<p class="city-features">Там есть мост дьявола</p>
-						<p class="dash">&#8212; №2 &#8212;</p>
-						<p class="feature-item-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+						<div class="feature-item-blue">
+							<p class="city-features">Там есть<br> мост дьявола</p>
+							<p class="dash">&#8212; №2 &#8212;</p>
+							<p class="feature-item-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
+						</div>
 						<div class="bridge-photo">
 							<img src="img/sedona-2.jpg" width="511" height="255" alt="Мост дьявола">
 						</div>	
@@ -78,32 +85,32 @@
 			</section>
 			<section class="appointment">
 				<p class="appointment-text">Заинтересовались?</p>
-				<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-				<button type="button">Поиск гостиницы в Седоне</button>
+				<p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
 				<form class="search" action="https://echo.htmlacademy.ru" method="post">	
 					<p>
 						<label for="arrival">дата заезда:</label>
-						<input id="arrival" type="text" name="arrival">
-						<button type="button">Календарь</button>
+						<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
+						<button class="button-calendar" type="button">Календарь</button>
 					</p>
 					<p>	
 						<label for="departure">дата выезда:</label>
-						<input id="departure" type="text" name="departure">
-						<button type="button">Календарь</button>
+						<input id="departure" type="text" name="departure" value="4 июля 2017">
+						<button class="button-calendar" type="button">Календарь</button>
 					</p>
 					<div class="search-adults">
 						<label for="adults">взрослые:</label>
-						<button type="button">уменьшить</button>
-						<input id="adults" type="number" min="0" name="adults">
-						<button type="button">увеличить</button>
+						<button class="symbol decrease" type="button">уменьшить</button>
+						<input id="adults" type="number" min="0" name="adults" value="2">
+						<button class="symbol increase" type="button">увеличить</button>
 					</div>	
 					<div class="search-children">
 						<label for="children">дети:</label>
-						<button type="button">уменьшить</button>
-						<input id="children" type="number" min="0" name="children">
-						<button type="button">увеличить</button>
+						<button class="symbol decrease" type="button">уменьшить</button>
+						<input id="children" type="number" min="0" name="children" value="0">
+						<button class="symbol increase" type="button">увеличить</button>
 					</div>	
-					<button type="submit" value="найти"></button>	
+					<button class="button-search" type="submit" value="найти">найти</button>	
 				</form>	
 				<div class="map">
 					<img src="img/map.jpg" width="768" height="473" alt="Карта штата">
@@ -111,15 +118,15 @@
 			</section>	
 		</main>
 		<footer class="main-footer">
-			<p>#visitsedona</p>
+			<p class="instagram">#visitsedona</p>
 				<ul class="footer-social">
-					<li><a class="social-button" href="#">Твиттер</a></li>
-					<li><a class="social-button" href="#">Фэйсбук</a></li>
-					<li><a class="social-button" href="#">Ютуб</a></li>
+					<li><a class="social-button twitter" href="#">Твиттер</a></li>
+					<li><a class="social-button facebook" href="#">Фэйсбук</a></li>
+					<li><a class="social-button youtube" href="#">Ютуб</a></li>
 				</ul>	
 			<p class="footer-copyright">
 				<span>Website by</span>
-				<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
+				<a class="button html-academy" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
 			</p>
 		</footer>
 		<section class="modal modal-search-modal">

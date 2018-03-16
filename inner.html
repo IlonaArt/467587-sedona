@@ -59,67 +59,78 @@
 					</fieldset>
 					<fieldset>
 						<legend>Стоимость в сутки (р):</legend>
-							<label>
-								<input type="range" name="radio">
-							</label>
-							<button type="submit">Показать</button>	
+							<div class="cost">
+								<label>
+									<input type="text" name="cost-min" value="от 0">
+								</label>
+								<label>
+									<input type="text" name="cost-max" value="до 3000">
+								</label>
+							</div>	
+							<div class="range-view">	
+								<label>
+									<input type="range" name="radio">
+								</label>
+							</div>	
+							<button class="button-show" type="submit">Показать</button>	
 					</fieldset>	
+				</form>	
 			</section>
 			<section class="sorting">
 				<h2 class="visually-hidden">Сортировка гостиниц</h2>
-				<p>найдено: 3</p>
+				<p class="found">найдено: 3</p>
 				<p class="sorting-type">сортировка:</p>
 					<ul class="sorting-type-list">
 						<li class="sorting-type-item"><a href="price.html">по цене</a></li>
 						<li class="sorting-type-item"><a href="type.html">по типу</a></li>
 						<li class="sorting-type-item"><a href="rating.html">по рейтингу</a></li>	
 					</ul>
-				<button class="visually-hidden" type="button">вверх</button>
-				<button class="visually-hidden" type="button">вниз</button>	
+				<button class="button-switch icon-up" type="button">вверх</button>
+				<button class="button-switch icon-down" type="button">вниз</button>	
 			</section>	
 			<div class="hotels-type">
 				<div class="hotels-type-image">
 					<img src="img/hotels-1.jpg" width="135" height="90" alt="Гостиница">
 				</div>	
 				<a class="hotels-type-link" href="amara.html">amara resort & spa</a>	
-				<p>гостиница</p>
-				<p>от 4000 р.</p>	
-					<span class="stars4"></span>
-					<p class="rating">рейтинг: 8,5</p>
-				<a class="button" href="moreinfo.html">подробнее</a>
-				<button>забронировать</button>
+				<p class="description">гостиница</p>
+				<p class="description">от 4000 р.</p>	
+				<span class="stars4"></span>
+				<p class="description">рейтинг: 8,5</p>
+				<a class="button button-blue" href="moreinfo.html">подробнее</a>
+				<a class="button button-brown" href="#">забронировать</a>
 			</div>
 			<div class="hotels-type">
 				<div class="hotels-type-image">
 					<img src="img/hotels-2.jpg" width="135" height="90" alt="Мотель">
 				</div>	
 				<a class="hotels-type-link" href="desert.html">desert quail inn</a>	
-				<p>мотель</p>
-				<p>от 3000 р.</p>	
-					<span class="stars3"></span>
-					<p class="rating">рейтинг: 8,9</p>
-				<a class="button" href="moreinfo.html">подробнее</a>
-				<button>забронировать</button>
+				<p class="description">мотель</p>
+				<p class="description">от 3000 р.</p>	
+				<span class="stars3"></span>
+				<p class="description">рейтинг: 8,9</p>
+				<a class="button button-blue" href="moreinfo.html">подробнее</a>
+				<a class="button button-brown" href="#">забронировать</a>
 			</div>
 			<div class="hotels-type">
 				<div class="hotels-type-image">
 					<img src="img/hotels-3.jpg" width="135" height="90" alt="апартаменты">
 				</div>
 				<a class="hotels-type-link" href="villas.html">villas at poco diablo</a>	
-				<p>апартаменты</p>
-				<p>от 2000 р.</p>	
-					<span class="stars2"></span>
-					<p class="rating">рейтинг: 9,2</p>
-				<a class="button" href="moreinfo.html">подробнее</a>
-				<button>забронировать</button>
+				<p class="description">апартаменты</p>
+				<p class="description">от 2000 р.</p>	
+				<span class="stars2"></span>
+				<p class="description">рейтинг: 9,2</p>
+				<a class="button button-blue" href="moreinfo.html">подробнее</a>
+				<a class="button button-brown" href="#">забронировать</a>
 			</div>
 		</main>	
 		<footer class="main-footer">
 			<p>#visitsedona</p>
 				<ul class="footer-social">
-					<li><a class="social-button" href="#">Твиттер</a></li>
-					<li><a class="social-button" href="#">Фэйсбук</a></li>
-					<li><a class="social-button" href="#">Ютуб</a></li>
+					<li><a class="social-button twitter" href="#">Твиттер</a></li>
+					<li><a class="social-button facebook" href="#">Фэйсбук</a></li>
+					<li><a class="social-button youtube" href="#">Ютуб</a></li>
 				</ul>	
 			<p class="footer-copyright">
 				<span>Website by</span>
