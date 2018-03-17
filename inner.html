@@ -6,7 +6,7 @@
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body class="inner-page">
 		<header class="main-header">
 			<nav class="main-menu">
 				<a class="main-header-logo" href="index.html">
@@ -16,7 +16,7 @@
 					<li><a href="info.html">Информация</a></li>
 					<li><a href="media.html">Фото и видео</a></li>
 					<li><a href="map.html">Карта штата</a></li>
-					<li><a href="hotels.html">Гостиницы</a></li>	
+					<li><a class="inner" href="hotels.html">Гостиницы</a></li>	
 				</ul>       	
 			</nav>		  			
 		</header>
@@ -27,15 +27,15 @@
 						<legend>Инфраструктура:</legend>
 						<ul>
 							<li>
-								<label for="filter-pool">бассейн</label>
+								<label class="filter-label" for="filter-pool">бассейн</label>
 								<input id="filter-pool" type="checkbox" name="pool" checked>
 							</li>	
 							<li>
-								<label for="filter-parking">парковка</label>
+								<label class="filter-label" for="filter-parking">парковка</label>
 								<input id="filter-parking" type="checkbox" name="parking">
 							</li>
 							<li>	
-								<label for="filter-wi-fi">wi-fi</label>
+								<label class="filter-label" for="filter-wi-fi">wi-fi</label>
 								<input id="filter-wi-fi" type="checkbox" name="wi-fi">
 							</li>	
 						</ul>	
@@ -44,15 +44,15 @@
 						<legend>Тип жилья:</legend>
 						<ul>
 							<li>
-								<label for=filter-hotel>гостиница</label>
+								<label class="filter-label" for="filter-hotel">гостиница</label>
 								<input id="filter-hotel" type="checkbox" name="hotel" checked>
 							</li>
 							<li>	
-								<label for="filter-motel">мотель</label>
+								<label class="filter-label" for="filter-motel">мотель</label>
 								<input id="filter-motel" type="checkbox" name="motel" checked>
 							</li>
 							<li>	
-								<label for="filter-appartments">апартаменты</label>
+								<label class="filter-label" for="filter-appartments">апартаменты</label>
 								<input id="filter-appartments" type="checkbox" name="appartments" checked>
 							</li>	
 						</ul>
@@ -60,10 +60,10 @@
 					<fieldset>
 						<legend>Стоимость в сутки (р):</legend>
 							<div class="cost">
-								<label>
+								<label class="filter-label">
 									<input type="text" name="cost-min" value="от 0">
 								</label>
-								<label>
+								<label class="filter-label">
 									<input type="text" name="cost-max" value="до 3000">
 								</label>
 							</div>	

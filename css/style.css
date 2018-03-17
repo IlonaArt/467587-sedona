@@ -4,8 +4,8 @@
 	font-weight: 400;
 	src:
 		local("PT Sans"),
-		url("web/ptsans.woff") format("woff"),
-		url("web/ptsans.woff2") format("woff2"); 
+		url("../fonts/ptsans.woff") format("woff"),
+		url("../fonts/ptsans.woff2") format("woff2"); 
 }
 
 @font-face {
@@ -14,8 +14,8 @@
 	font-weight: 700;
 	src:
 		local("PT Sans Narrow"),
-		url("web/ptsansbold.woff") format("woff"),
-		url("web/ptsansbold.woff2") format("woff2"); 
+		url("../fonts/ptsansbold.woff") format("woff"),
+		url("../fonts/ptsansbold.woff2") format("woff2"); 
 }
 
 body {
@@ -46,7 +46,6 @@ button[type="button"] {
 	border: none;
 }
 
-
 .main-menu {
 	line-height: 26px;
 	color: #000000;
@@ -57,7 +56,6 @@ button[type="button"] {
 .site-navigation li {
 	list-style: none;
 }
-
 
 .site-navigation a {
 	color: #000000;
@@ -96,7 +94,6 @@ ul.main-features,
 ul.main-features-list {
 	list-style: none;
 }
-
 
 .main-features-text,
 .feature-item-text,
@@ -154,7 +151,6 @@ p.souvenirs,
 	background-color: #f2f2f2;
 	border: none;
 }
-
 
 .search input[type="text"] {
 	cursor: pointer;
@@ -249,6 +245,10 @@ ul.footer-social {
 
 /* внутренняя страница*/
 
+a.inner {
+	color: #766357;
+}
+
 .main-filter {
 	background-image: url("../img/sedona-inner.jpg");
 	background-position: top center;
@@ -271,17 +271,30 @@ ul.footer-social {
 	font-weight: normal;
 }
 
+.filter fieldset {
+	border: none;
+}
+
+.filter-label {
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.filter input[type="text"] {
+	color:  #ffffff;
+	text-transform: uppercase;
+	text-align: center;
+
+	background-color: transparent;
+	border: none;
+}
+.cost .filter-label {
+	border: solid 2px #ffffff;
+}
+
 .filter input[type="checkbox"] {
 	color: #ffffff;
 	cursor: pointer;
-}
-
-.filter input[type="checkbox"]:hover {
-	color: #ffffff;
-}
-
-.filter input[type="checkbox"]:disabled {
-	color: 6a6a6a;
 }
 
 .filter input[type="checkbox"]:checked:hover {
@@ -289,7 +302,19 @@ ul.footer-social {
 }
 
 .filter input[type="checkbox"]:checked:disabled {
-	color: 6a6a6a;
+	color: #6a6a6a;
+}
+
+.filter input[type="checkbox"]:hover {
+	color: #ffffff;
+}
+
+.filter input[type="checkbox"]:disabled {
+	color: #6a6a6a;
+}
+
+.filter input[type="range"] {
+	cursor: pointer;
 }
 
 .filter .button-show {
