@@ -21,6 +21,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	width: 768px;
 
 	font-family: "PT Sans", "Arial", sans-serif;
 	font-size: 14px;
@@ -91,7 +92,8 @@ button[type="button"] {
 
 ul.features-list,
 ul.main-features,
-ul.main-features-list {
+ul.main-features-list,
+ul.main-features-list2 {
 	list-style: none;
 }
 
@@ -122,10 +124,17 @@ p.souvenirs,
 }
 
 .button-search-hotels {
+	display: block;
 	font-size: 21px;
 	line-height: 26px;
 	color:  #ffffff;
 	background-color: #766357;
+	width: 568px;
+	height: 86px;
+	padding: 34px 140px 32px 140px;
+	white-space: nowrap;
+	box-sizing: border-box;
+	margin: 0 100px;
 }
 
 .button-search-hotels:hover {
@@ -140,6 +149,7 @@ p.souvenirs,
 
 .search input {
 	line-height: 26px;
+	height: 38px;
 }
 
 .search input[type="text"],
@@ -150,6 +160,14 @@ p.souvenirs,
 
 	background-color: #f2f2f2;
 	border: none;
+}
+
+.search input[type="text"] {
+	width: 348px;
+}
+
+.search input[type="number"] {
+	width: 116px;
 }
 
 .search input[type="text"] {
@@ -200,8 +218,8 @@ p.souvenirs,
 	text-align: center;
 	text-transform: uppercase;
 	border: none;
-	font-weight: normal;
 	cursor: pointer;
+	height: 60px;
 }
 
 .search button[type="submit"]:hover {
@@ -427,4 +445,119 @@ a.hotels-type-link:hover {
 a.hotels-type-link:focus {
 	color: #b2b2b2;
 }
+
+.main-header {
+	display: flex;
+}
+
+.main-menu {
+	width: 100%;
+}
+
+.site-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 10px;
+	height: 56px;
+}
+
+.index-column {
+	display: block;
+	min-height: 212px;
+	padding: 60px 138px 56px 138px;
+	box-sizing: border-box;
+	background-color: yellow;
+}
+
+.features-list {
+	margin: 0;
+	padding: 0;
+}
+
+.feature-item {
+	display: flex;
+}
+
+.feature-item-blue {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 256px;
+	color:  #ffffff;
+	padding: 0 38px;
+	box-sizing: border-box;
+
+	background-color: #81b3d2;
+}
+
+.city-photo,
+.bridge-photo {
+	display: flex;
+}
+
+.main-features-list {
+	margin: 0;
+	padding: 164px 44px 66px 50px;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+
+.main-features-item {
+	width: 166px;
+}
+
+.main-features-list2 {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	background-color: #eeeeee;
+	justify-content: space-around;
+	background-color: orange;
+}
+
+.main-features {
+	display: flex;
+	flex-direction: column;
+	width: 158px;
+	margin-top: 30px;
+}
+
+.main-features:nth-child(1) {
+	width: 140px;
+	word-wrap: break-word;
+}
+
+.appointment-column {
+	display: block;
+	min-height: 205px;
+	padding: 56px 166px 52px 168px;
+	box-sizing: border-box;
+	background-color: lightgreen;
+}
+
+.appointment-info {
+	word-wrap: break-word;
+}
+
+form.search {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	width: 568px;
+	height: 396px;
+	box-sizing: border-box;
+	margin: 0 100px 0 100px;
+	padding: 56px;
+	box-sizing: border-box;
+	background-color: lightyellow;
+}
+
+.map {
+	background-position: ;
+}
+
+
 

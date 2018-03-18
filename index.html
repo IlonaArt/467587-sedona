@@ -20,14 +20,17 @@
 				</ul>       	
 			</nav>		  			
 		</header>
+
 		<main class="container">
 			<section class="main-photo">
 				<h1 class="visually-hidden">Городок Седона</h1>
 					<div class="main-photo-image">	
 						<img src="img/welcome-to.jpg" alt="Седона">
 					</div>	
-				<p class="sedona-text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
-				<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+				<div class="index-column">	
+					<p class="sedona-text">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+					<p class="reasons">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+				</div>	
 			</section>
 			<section class="features">
 				<h2 class="visually hidden">Преимущества</h2>
@@ -38,10 +41,10 @@
 							<p class="dash">&#8212; №1 &#8212;</p>	
 							<p class="feature-item-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
 						</div>
+						<div class="city-photo">
+							<img src="img/sedona-1.jpg" width="511" height="255" alt="Настоящий городок">
+						</div>
 					</li>		
-					<div class="city-photo">
-						<img src="img/sedona-1.jpg" width="511" height="255" alt="Настоящий городок">
-					</div>
 					<ul class="main-features-list">
 						<li class="main-features-item lodging">
 							<p class="lodging">Жилье</p>
@@ -57,47 +60,51 @@
 						</li> 		
 					</ul>
 					<li class="feature-item">
+						<div class="bridge-photo">
+							<img src="img/sedona-2.jpg" width="511" height="255" alt="Мост дьявола">
+						</div>	
 						<div class="feature-item-blue">
 							<p class="city-features">Там есть<br> мост дьявола</p>
 							<p class="dash">&#8212; №2 &#8212;</p>
 							<p class="feature-item-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
 						</div>
-						<div class="bridge-photo">
-							<img src="img/sedona-2.jpg" width="511" height="255" alt="Мост дьявола">
-						</div>	
 					</li>
-					<li class="feature-item">
-						<p class="place">Небольшая площадь</p>
-						<p class="dash">&#8212; №3 &#8212;</p>
-						<p class="feature-item-text">Все достопримечательности находятся очень близко</p>
-					</li>	
-					<li class="feature-item">
-						<p class="road">Красивая дорога</p>
-						<p class="dash">&#8212; №4 &#8212;</p>
-						<p class="feature-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>	
-					</li>    
-					<li class="feature-item">
-						<p class="tourists">Мало туристов</p>
-						<p class="dash">&#8212; №5 &#8212;</p>
-						<p class="feature-item-text">Большинство едет в Гранд Каньон и толпится там</p>
-					</li>	
+					<ul class="main-features-list2">
+						<li class="main-features">
+							<p class="place">Небольшая площадь</p>
+							<p class="dash">&#8212; №3 &#8212;</p>
+							<p class="feature-item-text">Все достопримечательности находятся очень близко</p>
+						</li>	
+						<li class="main-features">
+							<p class="road">Красивая дорога</p>
+							<p class="dash">&#8212; №4 &#8212;</p>
+							<p class="feature-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>	
+						</li>    
+						<li class="main-features">
+							<p class="tourists">Мало туристов</p>
+							<p class="dash">&#8212; №5 &#8212;</p>
+							<p class="feature-item-text">Большинство едет в Гранд Каньон и толпится там</p>
+						</li>
+					</ul>	
 				</ul>     
 			</section>
 			<section class="appointment">
-				<p class="appointment-text">Заинтересовались?</p>
-				<p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<div class="appointment-column">
+					<p class="appointment-text">Заинтересовались?</p>
+					<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				</div>
 				<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
 				<form class="search" action="https://echo.htmlacademy.ru" method="post">	
-					<p>
+					<div class="search-arrival">
 						<label for="arrival">дата заезда:</label>
 						<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
 						<button class="button-calendar" type="button">Календарь</button>
-					</p>
-					<p>	
+					</div>
+					<div class="search-departure">	
 						<label for="departure">дата выезда:</label>
 						<input id="departure" type="text" name="departure" value="4 июля 2017">
 						<button class="button-calendar" type="button">Календарь</button>
-					</p>
+					</div>
 					<div class="search-adults">
 						<label for="adults">взрослые:</label>
 						<button class="symbol decrease" type="button">уменьшить</button>
