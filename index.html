@@ -73,7 +73,7 @@
 						<li class="main-features">
 							<p class="place">Небольшая площадь</p>
 							<p class="dash">&#8212; №3 &#8212;</p>
-							<p class="feature-item-text">Все достопримечательности находятся очень близко</p>
+							<p class="feature-item-text">Все достопримеча &shy; тельности находятся очень близко</p>
 						</li>	
 						<li class="main-features">
 							<p class="road">Красивая дорога</p>
@@ -90,51 +90,53 @@
 			</section>
 			<section class="appointment">
 				<div class="appointment-column">
-					<p class="appointment-text">Заинтересовались?</p>
-					<p class="appointment-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+					<p class="appointment-text">Заинтересовались?
+						<span class="appointment-info">Укажите предполагаемые даты поездки,</span>
+						<span class="appointment-info"> и мы покажем вам лучшие предложения гостиниц в Седоне</span>
+					</p>	
 				</div>
-				<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
-				<form class="search" action="https://echo.htmlacademy.ru" method="post">	
-					<div class="search-arrival">
-						<label for="arrival">дата заезда:</label>
-						<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
-						<button class="button-calendar" type="button">Календарь</button>
-					</div>
-					<div class="search-departure">	
-						<label for="departure">дата выезда:</label>
-						<input id="departure" type="text" name="departure" value="4 июля 2017">
-						<button class="button-calendar" type="button">Календарь</button>
-					</div>
-					<div class="search-adults">
-						<label for="adults">взрослые:</label>
-						<button class="symbol decrease" type="button">уменьшить</button>
-						<input id="adults" type="number" min="0" name="adults" value="2">
-						<button class="symbol increase" type="button">увеличить</button>
-					</div>	
-					<div class="search-children">
-						<label for="children">дети:</label>
-						<button class="symbol decrease" type="button">уменьшить</button>
-						<input id="children" type="number" min="0" name="children" value="0">
-						<button class="symbol increase" type="button">увеличить</button>
-					</div>	
-					<button class="button-search" type="submit" value="найти">найти</button>	
-				</form>	
-				<div class="map">
-					<img src="img/map.jpg" width="768" height="473" alt="Карта штата">
-				</div>
+				<div class="search-wrapper">
+					<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
+					<form class="search" action="https://echo.htmlacademy.ru" method="post">	
+						<div class="search-arrival">
+							<label for="arrival">дата заезда:</label>
+							<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
+							<button class="button-calendar" type="button">Календарь</button>
+						</div>
+						<div class="search-departure">	
+							<label for="departure">дата выезда:</label>
+							<input id="departure" type="text" name="departure" value="4 июля 2017">
+							<button class="button-calendar" type="button">Календарь</button>
+						</div>
+						<div class="search-adults">
+							<label for="adults">взрослые:</label>
+							<button class="symbol decrease" type="button">уменьшить</button>
+							<input id="adults" type="number" min="0" name="adults" value="2">
+							<button class="symbol increase" type="button">увеличить</button>
+						</div>	
+						<div class="search-children">
+							<label for="children">дети:</label>
+							<button class="symbol decrease" type="button">уменьшить</button>
+							<input id="children" type="number" min="0" name="children" value="0">
+							<button class="symbol increase" type="button">увеличить</button>
+						</div>	
+						<button class="button-search" type="submit" value="найти">найти</button>	
+					</form>	
+				</div>	
 			</section>	
 		</main>
-		<footer class="main-footer">
+		
+		<footer class="main-footer"> 
 			<p class="instagram">#visitsedona</p>
-				<ul class="footer-social">
+			<ul class="footer-social">
 					<li><a class="social-button twitter" href="#">Твиттер</a></li>
 					<li><a class="social-button facebook" href="#">Фэйсбук</a></li>
 					<li><a class="social-button youtube" href="#">Ютуб</a></li>
-				</ul>	
+			</ul>	
 			<p class="footer-copyright">
 				<span>Website by</span>
 				<a class="button html-academy" href="https://htmlacademy.ru/intensive/htmlcss">html academy</a>
-			</p>
+			</p>	
 		</footer>
 		<section class="modal modal-search-modal">
 		</section>	
