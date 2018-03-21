@@ -405,6 +405,7 @@ a.inner {
 
 .filter input[type="range"] {
 	cursor: pointer;
+	padding: 0;
 }
 
 .filter .button-show {
