@@ -48,6 +48,14 @@ html {
 	margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .main-menu {
 	line-height: 26px;
 	color: #000000;
@@ -84,7 +92,7 @@ html {
 .sedona-text {
 	font-size: 21px;
 	line-height: 26px;
-	margin-bottom: 25px;
+	margin: 0 0 25px 0;
 }
 
 .reasons {
@@ -111,11 +119,8 @@ ul.main-features-list2 {
 }
 
 .feature-item-text {
-	width: 268px;
-}
-
-.feature-item-text2 {
-	width: 308px;
+	margin: 0 auto;
+	width: 306px;
 }
 
 .dash {
@@ -128,7 +133,6 @@ ul.main-features-list2 {
 }
 
 .city-features,
-.city-features2,
 p.lodging,
 p.meal,
 p.souvenirs,
@@ -140,13 +144,8 @@ p.souvenirs,
 }
 
 .city-features {
-	margin-bottom: 28px;
-	width: 128px;
-	margin-left: 78px;
-}
-
-.city-features2 {
-	margin-bottom: 28px;
+	width: 158px;
+	margin: 0 auto 28px;
 }
 
 .city-features-others {
@@ -154,11 +153,10 @@ p.souvenirs,
 	margin-bottom: 28px;
 }
 
-.appointment-text {
+b.appointment-text {
 	font-size: 30px;
 	line-height: 24px;
 	margin: 0 auto;
-	width: 444px;
 }
 
 span.appointment-info {
@@ -633,8 +631,9 @@ a.hotels-type-link:focus {
 
 .index-column {
 	display: block;
-	margin: 56px 355px 58px 355px;
-	background-color: yellow;
+	padding: 56px 0 58px 0;
+	margin: 0 auto;
+	max-width: 500px;
 }
 
 .features-list {
@@ -647,34 +646,16 @@ a.hotels-type-link:focus {
 }
 
 .feature-item-blue {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
 	width: 33.333%;
 	color:  #ffffff;
-	padding: 0 60px;
+	padding: 50px 0 60px;
 
 	background-color: #81b3d2;
-}
-
-.feature-item-blue2 {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	width: 33.333%;
-	color:  #ffffff;
-	padding: 0 50px;
-
-	background-color: #81b3d2;
-}
-
-.city-photo,
-.bridge-photo {
-	display: flex;
 }
 
 .city-photo {
 	width: 66.666%;
+	display: flex;
 }
 
 .city-photo img {
@@ -685,19 +666,19 @@ a.hotels-type-link:focus {
 
 .main-features-list {
 	margin: 0;
-	padding: 164px 0 88px 0;
+	padding: 32px 0 84px 0;
 	display: flex;
 	justify-content: space-between;
-	background-color: grey;
 }
 
 .main-features-item {
 	width: 33.3333%;
+	padding-top: 116px;
 }
 
 .main-features-list2 {
 	margin: 0;
-	padding: 0;
+	padding: 44px 0 60px 0;
 	display: flex;
 	background-color: #eeeeee;
 }
@@ -706,15 +687,15 @@ a.hotels-type-link:focus {
 	display: flex;
 	flex-direction: column;
 	width: 400px;
-	margin-top: 50px;
-	margin-bottom: 64px;
 	align-items: center;
 }
 
 .appointment-column {
 	display: block;
-	min-height: 208px;
-	padding: 56px 166px 52px 162px;
+	margin: 0 auto;
+	padding: 56px 0 52px 0;
+	width: 444px;
+	text-align: center;
 }
 
 .search {
