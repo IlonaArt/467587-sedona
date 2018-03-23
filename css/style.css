@@ -129,7 +129,7 @@ ul.main-features-list2 {
 
 .main-features-text {
 	max-width: 300px;
-	margin: 20px auto 0 auto;
+	margin: 25px auto 0 auto;
 }
 
 .city-features,
@@ -145,12 +145,12 @@ p.souvenirs,
 
 .city-features {
 	width: 158px;
-	margin: 0 auto 28px;
+	margin: 0 auto 23px;
 }
 
 .city-features-others {
 	width: 120px;
-	margin-bottom: 28px;
+	margin-bottom: 24px;
 }
 
 b.appointment-text {
@@ -167,7 +167,7 @@ span.appointment-info {
 }
 
 span.appointment-info:first-child {
-	margin-top: 38px;
+	margin-top: 26px;
 }
 
 .button-search-hotels {
@@ -286,27 +286,67 @@ p.instagram {
 	font-size: 21px;
 	line-height: 26px;
 	margin: 0;
-	text-align: center;
+	align-self: center;
 }
 
-.footer-copyright {
-	margin: 0;
-	text-align: center;
-}
-
-.footer-copyright span {
-	font-weight: normal;
-}
-
-ul.footer-social {
-	list-style: none;
-	margin: 0;
+.footer-social {
 	padding: 0;
+	margin: 0;
+	margin-left: 28px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 150px;
+	list-style: none;
 }
 
 .footer-social a {
 	text-align: center;
 	color: #000000;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 46px;
+	background-color: #81b3d2;
+}
+
+.social-button:hover {
+	background-color: #669ec0;
+}
+
+.social-button:focus {
+	background-color: #5496bd;
+}
+.social-button:focus path {
+	fill: #88b6d1;
+}
+
+.footer-copyright {
+	margin: 0;
+	align-items: center;
+	display: flex;
+}
+
+.footer-copyright .button {
+	height: 40px;
+	width: 114px;
+}
+
+.footer-copyright .button:hover path{
+	fill: #81b3d2;
+}
+
+.footer-copyright .button:focus path {
+	fill: #bdbbbc;
+}
+
+.footer-copyright span {
+	font-weight: normal;
+	margin-right: 8px;
 }
 
 .footer-copyright a {
@@ -607,6 +647,7 @@ a.hotels-type-link:focus {
 
 .site-navigation {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	margin: 0;
 	padding: 0 73px;
@@ -631,7 +672,7 @@ a.hotels-type-link:focus {
 
 .index-column {
 	display: block;
-	padding: 56px 0 58px 0;
+	padding: 64px 0 50px 0;
 	margin: 0 auto;
 	max-width: 500px;
 }
@@ -648,7 +689,7 @@ a.hotels-type-link:focus {
 .feature-item-blue {
 	width: 33.333%;
 	color:  #ffffff;
-	padding: 50px 0 60px;
+	padding: 48px 0 54px;
 
 	background-color: #81b3d2;
 }
@@ -666,7 +707,7 @@ a.hotels-type-link:focus {
 
 .main-features-list {
 	margin: 0;
-	padding: 32px 0 84px 0;
+	padding: 44px 0 82px 0;
 	display: flex;
 	justify-content: space-between;
 }
@@ -674,11 +715,45 @@ a.hotels-type-link:focus {
 .main-features-item {
 	width: 33.3333%;
 	padding-top: 116px;
+	position: relative;
+}
+
+.main-features-item.lodging::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/house-1.svg");
+	background-repeat: no-repeat;
+	width: 75px;
+	height: 75px;
+	top: 14px;
+	left: 162px;
+}
+
+.main-features-item.meal::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/meal-3.svg");
+	background-repeat: no-repeat;
+	width: 76px;
+	height: 72px;
+	top: 16px;
+	left: 162px;
+}
+
+.main-features-item.souvenirs::before {
+	content: "";
+	position: absolute;
+	background-image: url("../img/souvenirs-2.svg");
+	background-repeat: no-repeat;
+	width: 66px;
+	height: 78px;
+	top: 10px;
+	left: 168px;
 }
 
 .main-features-list2 {
 	margin: 0;
-	padding: 44px 0 60px 0;
+	padding: 46px 0 60px 0;
 	display: flex;
 	background-color: #eeeeee;
 }
@@ -693,7 +768,7 @@ a.hotels-type-link:focus {
 .appointment-column {
 	display: block;
 	margin: 0 auto;
-	padding: 56px 0 52px 0;
+	padding: 56px 0 40px 0;
 	width: 444px;
 	text-align: center;
 }
@@ -718,18 +793,8 @@ a.hotels-type-link:focus {
 
 .main-footer {
 	display: flex;
-	background-color: grey;
-	padding: 36px 0;
-}
-
-
-.footer-block {
-	width: 400px;
-}
-
-.footer-social {
-	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 36px 101px 36px 132px;
 }
 
 .main-filter {
