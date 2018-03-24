@@ -386,7 +386,7 @@ a.inner {
 	padding: 0 0 0 40px;
 	display: flex;
 	flex-direction: column;
-	margin: 16px 0 0 0;
+	margin: 14px 0 0 0;
 }
 
 .filter li {
@@ -397,6 +397,7 @@ a.inner {
 .filter-label {
 	font-size: 14px;
 	line-height: 21px;
+	cursor: pointer;
 }
 
 .filter input[type="text"] {
@@ -423,6 +424,7 @@ a.inner {
 .filter input[type="checkbox"] {
 	color: #ffffff;
 	cursor: pointer;
+	display: none;
 }
 
 .filter input[type="checkbox"]:checked:hover {
@@ -453,7 +455,7 @@ a.inner {
 	color:  #ffffff;
 	border: solid 2px #ffffff;
 	height: 32px;
-	width: 132px;
+	width: 136px;
 	margin-left: 86px;
 
 	background-color: transparent;
@@ -803,7 +805,7 @@ a.hotels-type-link:focus {
 
 .filter {
 	display: flex;
-	padding: 32px 73px;
+	padding: 27px 73px;
 	height: 100%;
 }
 
@@ -826,13 +828,24 @@ a.hotels-type-link:focus {
 }
 
 .filter-list-item:not(:last-child) {
-	margin-bottom: 16px;
+	margin-bottom: 26px;
 }
 
 .filter-list-item {
 	display: flex;
-	align-items: center;
-	height: 24px;
+	position: relative;
+}
+
+.checkbox-on {
+	position: absolute;
+	top: -2px;
+	left: -40px;
+}
+
+.checkbox-off {
+	position: absolute;
+	top: -2px;
+	left: -40px;
 }
 
 .filter-wrapper .filter-caption {
