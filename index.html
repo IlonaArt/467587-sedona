@@ -41,7 +41,7 @@
 								<div class="feature-item-blue">
 									<p class="city-features">Настоящий городок</p>
 									<p class="dash">&#8212; №1 &#8212;</p>	
-									<p class="feature-item-text">Седона - не аттракцион для туристов, &nbsp; там течет своя жизнь</p>
+									<p class="feature-item-text city">Седона - не аттракцион для туристов, &nbsp; там течет своя жизнь</p>
 								</div>
 								<div class="city-photo">
 									<img src="img/sedona-1.jpg" width="800" height="257" alt="Настоящий городок">
@@ -69,7 +69,7 @@
 							<div class="feature-item-blue">
 								<p class="city-features">Там есть<br> мост дьявола</p>
 								<p class="dash">&#8212; №2 &#8212;</p>
-								<p class="feature-item-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+								<p class="feature-item-text bridge">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 							</div>
 						</li>
 						<ul class="main-features-list2">
@@ -101,27 +101,29 @@
 					<div class="search-wrapper">
 						<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
 						<form class="search" action="https://echo.htmlacademy.ru" method="post">	
-							<div class="search-arrival">
+							<div class="search-dates">
 								<label for="arrival">дата заезда:</label>
 								<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
-							<div class="search-departure">	
+							<div class="search-dates">	
 								<label for="departure">дата выезда:</label>
 								<input id="departure" type="text" name="departure" value="4 июля 2017">
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
-							<div class="search-adults">
-								<label for="adults">взрослые:</label>
-								<button class="symbol decrease" type="button">уменьшить</button>
-								<input id="adults" type="number" min="0" name="adults" value="2">
-								<button class="symbol increase" type="button">увеличить</button>
-							</div>	
-							<div class="search-children">
-								<label for="children">дети:</label>
-								<button class="symbol decrease" type="button">уменьшить</button>
-								<input id="children" type="number" min="0" name="children" value="0">
-								<button class="symbol increase" type="button">увеличить</button>
+							<div class="search-column">
+								<div class="search-all">
+									<label class="adults" for="adults">взрослые:</label>
+									<button class="symbol decrease" type="button">уменьшить</button>
+									<input id="adults" type="number" min="0" name="adults" value="2">
+									<button class="symbol increase" type="button">увеличить</button>
+								</div>	
+								<div class="search-all">
+									<label class="children" for="children">дети:</label>
+									<button class="symbol decrease" type="button">уменьшить</button>
+									<input id="children" type="number" min="0" name="children" value="0">
+									<button class="symbol increase" type="button">увеличить</button>
+								</div>	
 							</div>	
 							<button class="button-search" type="submit" value="найти">найти</button>	
 						</form>	
