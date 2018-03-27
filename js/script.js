@@ -1,2 +1,7 @@
 var buttonSearch = document.querySelector(".button-search-hotels");
-var SearchForm = document.querySelector(".search");
+var searchForm = document.querySelector(".search");
+
+buttonSearch.addEventListener("click", function (evt) {
+	evt.preventDefault();
+	searchForm.classList.remove("visually-hidden");
+});

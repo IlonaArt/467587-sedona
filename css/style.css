@@ -169,7 +169,7 @@ b.appointment-text {
 
 span.appointment-info {
 	font-size: 14px;
-	line-height: 24px;
+	line-height: 21px;
 	font-weight: normal;
 	display: inline-block;
 }
@@ -202,7 +202,7 @@ span.appointment-info:first-child {
 
 .button-search-hotels:focus {
 	color: #857871;
-	background-color: : #503e33;
+	background-color: #503e33;
 }
 
 .search-dates {
@@ -948,7 +948,7 @@ a.hotels-type-link:focus {
 .appointment-column {
 	display: block;
 	margin: 0 auto;
-	padding: 56px 0 40px 0;
+	padding: 56px 0 44px 0;
 	width: 444px;
 	text-align: center;
 }
