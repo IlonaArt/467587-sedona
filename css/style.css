@@ -41,7 +41,7 @@ html {
 *::before, 
 *::after { 
 	box-sizing: inherit;
-	}
+}
 
 .wrap {
 	width: 1200px;
@@ -469,18 +469,12 @@ a.inner:link {
 	background-size: cover;
 }
 
-.filter-wrapper {
-	font-size: 16px;
-	line-height: 21px;
-	color: #ffffff;
-}
-
 .filter-list {
 	list-style: none;
 	padding: 0;
 	display: flex;
 	flex-direction: column;
-	margin: 14px 0 0 0;
+	margin: 14px 0 0 3px;
 }
 
 .filter li {
@@ -528,7 +522,7 @@ a.inner:link {
   	height: 22px;
 	padding-top: 10px;
 	padding-left: 12px;
-	margin-bottom: 22px;
+	margin-bottom: 20px;
 	border-radius: 5px;
 }
 
@@ -597,7 +591,7 @@ a.inner:link {
 	text-transform: uppercase;
 	color:  #ffffff;
 	border: solid 2px #ffffff;
-	height: 34px;
+	height: 36px;
 	width: 136px;
 	margin-left: 86px;
 
@@ -621,7 +615,7 @@ a.inner:link {
 }
 
 .sorting-type-item:not(:first-child) {
-	border-bottom: 1px dashed #81b3d2;
+	border-bottom: 1px dotted #81b3d2;
 }
 
 .sorting-type-item:first-child {
@@ -724,7 +718,8 @@ a.inner:link {
 	height: 28px;
 	width: 110px;
 	background-color: #f2f2f2;
-	padding-top: 4px;
+	padding-top: 3px;
+	padding-left: 5px;
 	margin: 0;
 	margin-top: 48px;
 	justify-content: center;
@@ -738,7 +733,7 @@ a.inner:link {
 .stars4 {
 	background-image: url("../img/star.svg");
 	background-repeat: space;
-	width: 89px;
+	width: 87px;
 	height: 16px;
 }
 
@@ -800,7 +795,8 @@ a.hotels-type-link {
 	font-size: 21px;
 	font-weight: 700;
 	color: #000000;
-	margin-bottom: 8px;
+	margin-top: -5px;
+	margin-bottom: 13px;
 }
 
 a.hotels-type-link:hover {
@@ -987,11 +983,14 @@ a.hotels-type-link:focus {
 
 .filter {
 	display: flex;
-	padding: 27px 73px;
+	padding: 27px 73px 31px 70px;
 	height: 100%;
 }
 
  .filter-wrapper {
+ 	font-size: 16px;
+	line-height: 21px;
+	color: #ffffff;
  	display: flex;
 	flex-direction: column;
  } 
@@ -1007,6 +1006,11 @@ a.hotels-type-link:focus {
 
 .filter-caption {
 	margin-top: 0;
+	margin-bottom: 12px;
+}
+
+.filter-caption:last-of-type {
+	padding-left: 3px;
 }
 
 .filter-list-item:not(:last-child) {
@@ -1016,10 +1020,6 @@ a.hotels-type-link:focus {
 .filter-list-item {
 	display: flex;
 	position: relative;
-}
-
-.filter-wrapper .filter-caption {
-	margin-bottom: 12px;
 }
 
 .sorting-wrapper {
@@ -1042,13 +1042,14 @@ a.hotels-type-link:focus {
 
 .hotels-type {
 	display: flex;
-	padding: 29px 71px;
 	border-bottom: 1px solid #e5e5e5;
+	padding: 29px 73px 29px 73px;
 }
 
 .hotels-type-column1 {
 	display: flex;
-	margin-right: 30px;
+	margin-right: 29px;
+	flex-shrink: 0;
 }
 
 .hotels-type-column2 {
@@ -1060,5 +1061,6 @@ a.hotels-type-link:focus {
 	display: flex;
 	flex-direction: column;
 	margin-left: auto;
+	flex-shrink: 0;
 }
 

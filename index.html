@@ -100,28 +100,28 @@
 					</div>
 					<div class="search-wrapper">
 						<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
-						<form class="search" action="https://echo.htmlacademy.ru" method="post">	
+						<form class="search visually-hidden" action="https://echo.htmlacademy.ru" method="post">	
 							<div class="search-dates">
 								<label for="arrival">дата заезда:</label>
-								<input id="arrival" type="text" name="arrival" value="24 апреля 2017">
+								<input id="arrival" type="text" name="arrival" value="24 апреля 2017" required>
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
 							<div class="search-dates">	
 								<label for="departure">дата выезда:</label>
-								<input id="departure" type="text" name="departure" value="4 июля 2017">
+								<input id="departure" type="text" name="departure" value="4 июля 2017" required>
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
 							<div class="search-column">
 								<div class="search-all">
 									<label class="adults" for="adults">взрослые:</label>
 									<button class="symbol decrease" type="button">уменьшить</button>
-									<input id="adults" type="number" min="0" name="adults" value="2">
+									<input id="adults" type="number" min="0" name="adults" value="2" required>
 									<button class="symbol increase" type="button">увеличить</button>
 								</div>	
 								<div class="search-all">
 									<label class="children" for="children">дети:</label>
 									<button class="symbol decrease" type="button">уменьшить</button>
-									<input id="children" type="number" min="0" name="children" value="0">
+									<input id="children" type="number" min="0" name="children" value="0" required>
 									<button class="symbol increase" type="button">увеличить</button>
 								</div>	
 							</div>	
@@ -157,5 +157,6 @@
 			<section class="modal modal-search-modal">
 			</section>
 		</div>
+		<script src="js/script.js"></script>
 	</body>	
 
