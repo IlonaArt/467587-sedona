@@ -1,13 +1,11 @@
 var buttonSearch = document.querySelector(".button-search-hotels");
 var searchForm = document.querySelector(".search");
-var arrival = document.querySelector("[name=arrival]");
 var dates = document.querySelector(".dates-text");
 var numbers = document.querySelector(".members");
 
 buttonSearch.addEventListener("click", function (evt) {
 	evt.preventDefault();
-	searchForm.classList.toggle("search");
-	arrival.focus();
+	dates.focus();
 });
 
 searchForm.addEventListener("submit", function (evt) {
