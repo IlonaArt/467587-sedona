@@ -100,28 +100,28 @@
 					</div>
 					<div class="search-wrapper">
 						<a class="button button-search-hotels" href="#">Поиск гостиницы в Седоне</a>
-						<form class="search visually-hidden" action="https://echo.htmlacademy.ru" method="post">	
+						<form class="search search-show" action="https://echo.htmlacademy.ru" method="post">	
 							<div class="search-dates">
-								<label for="arrival">дата заезда:</label>
-								<input id="arrival" type="text" name="arrival" value="24 апреля 2017" required>
+								<label class="arrival" for="arrival">дата заезда:</label>
+								<input class="dates-text" id="arrival" type="text" name="arrival" value="24 апреля 2017">
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
 							<div class="search-dates">	
-								<label for="departure">дата выезда:</label>
-								<input id="departure" type="text" name="departure" value="4 июля 2017" required>
+								<label class="departure" for="departure">дата выезда:</label>
+								<input class="dates-text" id="departure" type="text" name="departure" value="4 июля 2017">
 								<button class="button-calendar" type="button">Календарь</button>
 							</div>
 							<div class="search-column">
 								<div class="search-all">
 									<label class="adults" for="adults">взрослые:</label>
 									<button class="symbol decrease" type="button">уменьшить</button>
-									<input id="adults" type="number" min="0" name="adults" value="2" required>
+									<input class="members" id="adults" type="text" min="0" name="adults" value="2">
 									<button class="symbol increase" type="button">увеличить</button>
 								</div>	
 								<div class="search-all">
 									<label class="children" for="children">дети:</label>
 									<button class="symbol decrease" type="button">уменьшить</button>
-									<input id="children" type="number" min="0" name="children" value="0" required>
+									<input class="members" id="children" type="text" min="0" name="children" value="0">
 									<button class="symbol increase" type="button">увеличить</button>
 								</div>	
 							</div>	
@@ -129,7 +129,8 @@
 						</form>	
 					</div>	
 					<div class="map">
-						<img src="img/map.jpg" width="1200" height="473" alt="Карта штата">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52392.49011888374!2d-111.83959924470349!3d34.84289195575256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1522257683539" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
+						<img src="img/map.jpg" width="1200" height="593" alt="Карта штата">
 					</div>
 				</section>	
 			</main>
