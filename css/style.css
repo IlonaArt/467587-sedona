@@ -3,18 +3,18 @@
   font-style: normal;
   font-weight: 400;
   src: local("PT Sans"),
-		url("../fonts/ptsans.woff") format("woff"),
-		url("../fonts/ptsans.woff2") format("woff2");
+    url("../fonts/ptsans.woff") format("woff"),
+    url("../fonts/ptsans.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "PT Sans";
-	font-style: normal;
-	font-weight: 700;
-	src:
-		local("PT Sans Narrow"),
-		url("../fonts/ptsansbold.woff") format("woff"),
-		url("../fonts/ptsansbold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 700;
+  src:
+    local("PT Sans Narrow"),
+    url("../fonts/ptsansbold.woff") format("woff"),
+    url("../fonts/ptsansbold.woff2") format("woff2");
 }
 
 body {
@@ -25,7 +25,7 @@ body {
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 img {
@@ -50,8 +50,8 @@ html {
   width: 1200px;
   margin: 0 auto;
   box-shadow: -4px 0 12px 1px #dbdbdb,
-	4px 0 12px 1px #dbdbdb,
-	2px 0 2px 40px #f2f2f2;
+  4px 0 12px 1px #dbdbdb;
+  background-color: #ffffff;
 }
 
 .visually-hidden {
@@ -171,19 +171,16 @@ b.appointment-text {
   margin: 0 auto;
 }
 
-span.appointment-info {
+p.appointment-info {
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
   display: inline-block;
+  margin: 0;
 }
 
-span.appointment-info:first-of-type {
-  margin-top: 28px;
-}
-
-span.appointment-info:last-child {
-  margin-top: 3px;
+p.appointment-info {
+  margin-top: 29px;
 }
 
 .button-search-hotels {
@@ -240,15 +237,15 @@ span.appointment-info:last-child {
   width: 75%;
 }
 
+.dates-text:hover,
+.members:hover {
+  background-color: #ebebeb;
+}
+
 .dates-text:focus,
 .members:focus {
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
-}
-
-.dates-text:hover,
-.members:hover {
-  background-color: #ebebeb;
 }
 
 .button-calendar {
@@ -396,6 +393,10 @@ p.instagram {
   align-self: center;
 }
 
+.social-item {
+  margin-bottom: 6px;
+}
+
 .footer-social {
   padding: 0;
   margin: 0;
@@ -444,11 +445,11 @@ p.instagram {
   width: 114px;
 }
 
-.footer-copyright .button:hover path {
+.html-academy:hover path {
   fill: #81b3d2;
 }
 
-.footer-copyright .button:active path {
+.html-academy:active path {
   fill: #bdbbbc;
 }
 
@@ -479,6 +480,7 @@ a.inner:link {
 
 .main-filter {
   background-image: url("../img/sedona-inner2.jpg");
+  background-color: #35556a;
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -578,8 +580,8 @@ a.inner:link {
   left: 254px;
 }
 
-.checkbox {
-  display: none;
+.checkbox:focus + .filter-label {
+  outline: 2px solid #766357;
 }
 
 .checkbox + .filter-label {
@@ -632,10 +634,6 @@ a.inner:link {
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-type-item:first-child {
-  margin-right: 35px;
-}
-
 .sorting-type-item:nth-child(2) {
   margin-right: 32px;
 }
@@ -651,6 +649,7 @@ a.inner:link {
   font-weight: normal;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 14px;
   width: 179px;
@@ -661,11 +660,14 @@ a.inner:link {
   padding: 0;
   margin: 0;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  max-width: 600px;
 }
 
 .sorting-type-list li {
   list-style: none;
+  margin-right: 35px;
 }
 
 .sorting-type-item a {
@@ -726,6 +728,10 @@ a.inner:link {
 
 .icon-down:active {
   background-image: url("../img/icon-down-blue.svg");
+}
+
+.description span:first-child {
+  padding-right: 10px;
 }
 
 .description.rating {
@@ -881,13 +887,14 @@ a.hotels-type-link:active {
 
 .feature-item {
   display: flex;
+  justify-content: space-between;
+  background-color: #81b3d2;
 }
 
 .feature-item-blue {
   width: 33.333%;
   color: #ffffff;
   padding: 48px 0 54px;
-  background-color: #81b3d2;
 }
 
 .city-photo {
@@ -1034,7 +1041,7 @@ a.hotels-type-link:active {
   opacity: .9;
   display: flex;
   justify-content: space-between;
-  padding: 34px 101px 36px 132px;
+  padding: 35px 101px 36px 132px;
 }
 
 .inner-page .main-footer {
@@ -1042,12 +1049,12 @@ a.hotels-type-link:active {
 }
 
 .main-filter {
-  height: 218px;
+  padding-bottom: 2px;
 }
 
 .filter {
   display: flex;
-  padding: 27px 73px 31px 70px;
+  padding: 28px 73px 31px 70px;
   height: 100%;
 }
 
@@ -1056,7 +1063,9 @@ a.hotels-type-link:active {
   line-height: 21px;
   color: #ffffff;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  min-height: 100%;
 }
 
 .filter-wrapper:last-child {
