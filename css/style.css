@@ -395,6 +395,7 @@ p.instagram {
 
 .social-item {
   margin-bottom: 6px;
+  margin-right: 6px;
 }
 
 .footer-social {
@@ -404,7 +405,7 @@ p.instagram {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 150px;
+  max-width: 600px;
   list-style: none;
 }
 
